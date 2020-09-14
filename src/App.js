@@ -13,19 +13,21 @@ import './App.scss'
 function App() {
   return (
     <Router>
-      <Header/>
-      <Route exact path='/'>
-        <Home/>
-      </Route>
-      <Route path='/organization'>
-        <Organization/>
-      </Route>
-      <Route path='/organizations'>
-        <Organizations/>
-      </Route>
-      <Route path='/UserProfile'>
-        <UserProfile/>
-      </Route>
+      <div className='navbar'>
+        <Header/>
+      </div>
+        <Route exact path='/'>
+          <Home/>
+        </Route>
+        <Route path='/organization'>
+          <Organization/>
+        </Route>
+        <Route path='/organizations'>
+          <Organizations/>
+        </Route>
+        <Route path='/UserProfile'>
+          <UserProfile/>
+        </Route>
     </Router>
   );
 }
