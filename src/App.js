@@ -13,9 +13,7 @@ import './App.scss'
 function App() {
   return (
     <Router>
-      <div className='navbar'>
         <Header/>
-      </div>
         <Route exact path='/'>
           <Home/>
         </Route>

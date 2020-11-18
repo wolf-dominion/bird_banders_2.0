@@ -1,46 +1,46 @@
 @import 'node_modules/bootstrap/scss/bootstrap'; // existing bootstrap import
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 // * {border:1px solid red}
 
-.navbar {
-  padding-bottom: 69px;
+#root {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background-color: #97cdb3;
+  padding: 100px 50px 50px 50px; // T R B L
+  height: 100%;
+}
+
+.menu {
+  grid-column: span 3;
+  grid-row: span 12;
+  background-color: #fe6f6d;
+}
+
+.rows {
+  display: grid;
+  grid-column: span 9;
+  grid-row: span 12;
+  grid-template-rows: repeat(12, 1fr);
+  background-color: rgb(114, 162, 224);
+}
+
+.content {
+  background-color: #fecb64;
+  grid-row: span 2;
+}
+
+.content2 {
+  background-color: #bcc0ff;
+  margin: 50px;
+  padding: 50px;
+  grid-row: span 10;
 }

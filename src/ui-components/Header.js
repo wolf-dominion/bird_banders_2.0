@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
     return(
-        <Navbar className="w-auto p-3 fixed-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar className="w-auto p-3 fixed-top navbar navbar-default" collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand as={Link} to="/">BirdBanders</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
