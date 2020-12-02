@@ -1,40 +1,35 @@
 import React from 'react'
-
 import '../../src/App.scss'
+import UserSidebar from '../../src/ui-components/UserSidebar'
+import useVisibilityToggle from '../../src/hooks/useVisibilityToggle'
 
 function Home() {
-//     return(
-//             <div className="wrapper">
-//                 <div className="menu">MENU</div>
-//                 <div className="rows">
-//                     <div className="content">CONTENT</div>
-//                     <div className="content2">MORE CONTENT</div>
-//                 </div>
-//             </div>
-//     )
-// }
+
+    // const [Sidebar, toggleBarVisibility] = useVisibilityToggle(
+    //     <UserSidebar onClick={toggleBarVisibility}/>, 
+    //     true
+    // );
+
 return(
-    <div className="wrapper">
-        <header class="header">
-            <h1>Header</h1>
-        </header>
-        <article class="main">
-            <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. 
-            </p>
-        </article>
-        <aside class="aside aside1">
-            <h1>aside1</h1>
-        </aside>
-        <aside class="aside aside2">
-            <h1>aside2</h1>
-        </aside>
-        <footer class="footer">
-            <h1>footer</h1>
-        </footer>
+    <div className='wrapper'>
+        {/* {Sidebar} */}
+        <UserSidebar />
+        <div className='workspace'>
+            <div className='group-header'>
+                <div className='photo'>
+                    photograph here
+                </div>
+                <div className='group-info'>
+                    <h3>Group Name</h3>
+                    <br></br>
+                    <p>Description: yeeeeee haaawwww</p>
+                </div>
+            </div>
+            <div className='main-content-area'>
+                <div className='tabs'>tabs   one     two     three   four  five     six     seven   eight</div>
+                <div className='content'>content woohoo</div>
+            </div>
+        </div>
     </div>
 )
 }
